@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@Html.Action("_PartialSlider", "Default")
+
+<div class="wrap">
+    <div class="wrapper">
+        @Html.Action("_PartialDesciription" , "Default")
+
+        @Html.Action("_PartialHotels" , "Default")
+
+        <div class="grids">
+            <div class="box1">
+                @Html.Action("_PartialTop10" , "Default")
+                @Html.Action("_PartialBestPlace" , "Default")
+                
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>

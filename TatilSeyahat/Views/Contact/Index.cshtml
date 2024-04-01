@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="wrap">
+    <div class="contact-top">
+        <h3>Contact Information</h3>
+        <p> insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nu</p>
+    </div>
+    <div class="form">
+        <form action="/Contact/CreateMessage/" method="post">
+            <div class="form-group my-2">
+                <label for="name" class="form-label fw-bolder">İsim</label>
+                <input class="form-control" type="text" id="name" name="AdSoyad" required>
+            </div>
+            <div class="form-group my-2">
+                <label for="name" class="form-label fw-bolder">Mail</label>
+                <input class="form-control" type="text" id="name" name="Mail" required>
+            </div>
+            <div class="form-group my-2">
+                <label for="name" class="form-label fw-bolder">Konu</label>
+                <input class="form-control" type="text" id="name" name="Konu" required>
+            </div>
+            <div class="form-group my-2">
+                <label for="name" class="form-label fw-bolder">Mesaj</label>
+                <input class="form-control" type="text" id="name" name="Mesaj" required>
+            </div>
+            <button class="btn btn-success" style="background-color: #B53471; width: 100px; height: 34px; border-radius: 15px;" type="submit">Gönder</button>
+        </form>
+    </div>
+    <div class="form1">
+        <div>
+            <textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message:</textarea>
+        </div>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="clear"></div>
+</div>
+
+
+

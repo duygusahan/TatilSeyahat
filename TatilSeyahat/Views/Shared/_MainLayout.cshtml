@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML>
+<html>
+@Html.Action("_PartialHead" , "Default")
+<body>
+    <div class="header">
+        @Html.Action("_PartialHeader" , "Default")
+    </div>
+    @Html.Action("_PartialNavbar" , "Default")
+    
+    <div class"content">
+        @RenderBody()
+    </div>
+    @Html.Action("_PartialFooter" , "Default")
+</body>
+</html>

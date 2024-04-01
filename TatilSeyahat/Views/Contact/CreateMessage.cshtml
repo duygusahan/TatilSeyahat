@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "CreateMessage";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<div class="wrap">
+    <div class="contact-top">
+        <h3>İletişim Bilgileri</h3>
+        <p> Seyahatlerim hakkında sorularınız mı var? Bir öneriniz mi var? Ya da sadece merhaba demek mi istiyorsunuz? O halde benimle iletişime geçmekten çekinmeyin! Aşağıdaki iletişim formunu kullanarak bana ulaşabilirsiniz</p>
+
+        <div class="form">
+            <form action="/Contact/CreateMessage/" method="post">
+                <div class="form-group my-2">
+                    <label for="name" class="form-label fw-bolder">İsim</label>
+                    <input class="form-control" type="text" id="name" name="AdSoyad" required>
+                </div>
+                <div class="form-group my-2">
+                    <label for="name" class="form-label fw-bolder">Mail</label>
+                    <input class="form-control" type="text" id="name" name="Mail" required>
+                </div>
+                <div class="form-group my-2">
+                    <label for="name" class="form-label fw-bolder">Konu</label>
+                    <input class="form-control" type="text" id="name" name="Konu" required>
+                </div>
+                <div class="form-group my-2">
+                    <label for="name" class="form-label fw-bolder">Mesaj</label>
+                    <input class="form-control" type="text" id="name" name="Mesaj" required>
+                </div>
+                <button class="btn btn-success" style="background-color: #B53471; width: 100px; height: 34px; border-radius: 15px;" type="submit">Gönder</button>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="clear"></div>
+
+
+</div>
+
